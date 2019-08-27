@@ -1,0 +1,15 @@
+{
+  "name": "rate-my-pet-backend",
+  "version": "0.0.0",
+  "description": "Backend for Lofino coding challenge",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
