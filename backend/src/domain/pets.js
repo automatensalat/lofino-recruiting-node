@@ -8,7 +8,10 @@ const pets = [
   pet(2, "Archibald", "parrot", 15,
     "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Graupapagei.jpg/180px-Graupapagei.jpg",
     [3, 5, 3, 2, 5]
-  )
+  ),
+  pet(3, "Bubbles", "dog", 2, "https://images.dog.ceo/breeds/cockapoo/bubbles1.jpg", [3, 1, 5, 4, 2, 3]),
+  pet(4, "Charles", "dog", 4, "https://images.dog.ceo/breeds/malinois/n02105162_5800.jpg", [2, 4, 3, 4]),
+  pet(5, "Rose and Helena", "parrot", 9, "https://upload.wikimedia.org/wikipedia/commons/c/cc/Rosakakadu_ts3.jpg", [3, 1, 4, 2, 4])
 ];
 
 function pet(id, name, species, age, imageUrl, ratings) {
