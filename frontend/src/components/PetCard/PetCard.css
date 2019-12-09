@@ -1,0 +1,9 @@
+.pet-card {
+  margin: 16px;
+  min-height: 20vh;
+  background-color: #ddddff;
+}
+
+.pet-card--img {
+  max-width: 30%;
+}

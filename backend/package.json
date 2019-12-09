@@ -1,15 +1,33 @@
 {
-  "name": "rate-my-pet-backend",
-  "version": "0.0.0",
-  "description": "Backend for Lofino coding challenge",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "rate-my-pet-backend",
+	"version": "0.0.0",
+	"description": "Backend for Lofino coding challenge",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "npm run dev",
+		"test": "./node_modules/.bin/jest",
+		"build": "./node_modules/.bin/tsc && npm run copy-files",
+		"dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"sequelize": "^5.21.2",
+		"sqlite3": "^4.1.1",
+		"uuid": "^3.3.3"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.2",
+		"@types/jest": "^24.0.23",
+		"@types/node": "^12.12.14",
+		"@typescript-eslint/eslint-plugin": "^2.10.0",
+		"@typescript-eslint/parser": "^2.10.0",
+		"eslint": "^6.7.2",
+		"jest": "^24.9.0",
+		"prettier": "^1.19.1",
+		"ts-jest": "^24.2.0",
+		"ts-node-dev": "^1.0.0-pre.44",
+		"typescript": "^3.7.3"
+	}
 }
