@@ -45,22 +45,30 @@ You may do this by creating a pull request on Github and comment the changes the
 # Getting started
 
 - install dependencies on the backend
-- start the backend app with `npm start`
+
   ```bash
   cd backend
   npm install
+  ```
+
+- start the backend app with `npm start`
+  ```bash
+  npm start
   ```
 - use an HTTP client like `curl` or `Postman` to see if the server is responding to requests.
 
   - `curl http://localhost:8080/hello` -> `Hello World!`
 
 - install dependencies on the frontend
-- start the frontend with `npm `
   ```bash
   cd frontend
   npm install
   ```
-- open `http://localhost:3000/` with your web browser
+- start the frontend with `npm start`
+  ```bash
+  npm start
+  ```
+- open `http://localhost:3000/` with your web browser. You should see a simple web page with pictures of animals.
 
 # Some Notes
 
