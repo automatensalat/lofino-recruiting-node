@@ -1,4 +1,4 @@
-import { petsRoutes } from "./routes/pets";
+import { petsRoutes } from "./routes/petsRoutes";
 import express from "express";
 
 const app = express();
@@ -16,4 +16,4 @@ app.use(function enableCors(req, res, next) {
 app.use("/pets", petsRoutes);
 app.get("/hello", (req, res) => res.send("Hello World!"));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Backend listening on port ${port}!`));

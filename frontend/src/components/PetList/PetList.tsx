@@ -13,10 +13,10 @@ interface Props {
 function PetList(props: Props) {
   return (
     <ul className="pet-list">
-      {props.pets.map(pet => (
-        <li>
+      {props.pets.map((pet) => (
+        <li key={pet.id}>
           <Link to={`/pets/${pet.id}`}>
-            <PetCard key={pet.id} pet={pet} />
+            <PetCard pet={pet} />
           </Link>
         </li>
       ))}

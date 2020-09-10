@@ -5,11 +5,26 @@ import { fetchPets } from "../service/petService";
 
 export default function Home() {
   const [pets, setPets] = useState<Pet[]>([]);
+  const [error, setError] = useState(false);
   useEffect(() => {
-    (async () => {
-      setPets(await fetchPets());
-    })();
+    async function fetchPetsFromBackend() {
+      try {
+        setPets(await fetchPets());
+      } catch (e) {
+        setError(true);
+      }
+    }
+
+    fetchPetsFromBackend();
   }, []);
+
+  if (error) {
+    return <>Error! Could not fetch pets from the backend</>;
+  }
+
+  if (pets.length === 0) {
+    return <>Loading...</>;
+  }
 
   return (
     <article>

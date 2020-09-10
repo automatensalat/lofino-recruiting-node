@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
 import Home from "./page/Home";
@@ -10,7 +10,11 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>RateMyPet.com</h1>
+          <h1>
+            <Link to="/" className="header-link">
+              RateMyPet.com
+            </Link>
+          </h1>
         </header>
         <div className="content">
           <Switch>
