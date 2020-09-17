@@ -17,7 +17,7 @@ This repository comes with two software projects: A Node.js based backend and a 
 - [x] provide a server application based on Node.js that serves an **API** over HTTP
 - [ ] extend the API to allow users to rate existing pets (e.g. give a rating of 1-5 per pet)
   - the ratings should be stored on the backend as well. You can call `addRating()` in the `petsRepository` for that.
-- [ ] implement the `getTrendingPet()` function in `service/petsService` that finds the _trending_ Pet for an arbitrary point in time. A pet is considered trending if it has the most ratings within a time frame of the previous 7 days from the point in time we want to consider.
+- [ ] implement the `getTrendingPet()` function in `service/petsService` that finds the _trending_ Pet for an arbitrary point in time. A pet is considered trending if it has the most number of ratings within a time frame of the previous 7 days from the point in time we want to consider. See the documentation of the `getTrendingPet()` stub for more information.
 - [ ] provide an endpoint which returns the trending pet for the current day. Note that the trending pet may change as you add ratings.
 
 ## Frontend
