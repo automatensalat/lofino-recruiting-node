@@ -77,7 +77,7 @@ You may do this by creating a pull request on Github and comment the changes the
 - There are tests for both projects. Make sure they pass. Feel free to extend the tests where appropriate.
 - Focus on code quality and working software, try to follow best practices.
 - Keep an eye on security, usability etc.
-- If you feel you're stuck on something, work on something else instead
+- If you feel you're stuck on something, work on something else instead. You can add some comments in the code about any problems you encountered or the progress that you made
 - Feel free to add comments on the code if you want to explain something or on a place that could be improved
   - you can also add comments on the bottom of this document
 
